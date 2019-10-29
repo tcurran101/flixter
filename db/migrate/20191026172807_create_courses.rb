@@ -1,4 +1,4 @@
-class CreateCourses < ActiveRecord::Migration[5.2]
+class CreateCourses < ActiveRecord::Migration[5.0]
   def change
     create_table :courses do |t|
       t.string :title
@@ -7,7 +7,6 @@ class CreateCourses < ActiveRecord::Migration[5.2]
       t.integer :user_id
       t.timestamps
     end
-
     add_index :courses, :user_id
   end
 end
