@@ -25,8 +25,7 @@
           <%= link_to 'See All Courses', courses_path, class: 'nav-link' %>
           </li>       
         </ul>
-      </div>
-   </nav>
+    
     <ul class="navbar-nav">          
           <% if user_signed_in? %>
            
@@ -43,6 +42,9 @@
             </li>
           <% end %>
         </ul>
+
+          </div>
+   </nav>
 
       <% if notice.present? %>
         <p class="alert alert-info"><%= notice %></p>
