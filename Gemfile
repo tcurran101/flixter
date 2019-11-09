@@ -39,6 +39,7 @@ gem 'simple_form'
 gem 'carrierwave', '~> 2.0'
 gem 'fog-aws'
 gem 'mini_magick'
+gem 'carrierwave-aws'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
