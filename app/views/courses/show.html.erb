@@ -4,28 +4,37 @@
   <h1><%= @course.title %></h1>
   <%= image_tag @course.image.to_s, class: 'img-fluid' %>
   <br />
+   <br />
   <div class="row">
     <div class="col-sm-4 col-12">
       <span class="badge badge-default">
+        <div class="row">
+          <div class="col-12 text-center">
+              <%= number_to_currency @course.cost %>
+      </span>
 
+      <% if current_user && current_user == @course.user %>
+        <br />
+        <br />
+          <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-sm' %>
+          <% end %>
+        <br />
+        <br />
 
-  <div class="row">
-  <div class="col-12 text-center">
-    <span class="badge badge-default">
-      <%= number_to_currency @course.cost %>
-    </span>
+      <% if current_user && current_user.enrolled_in?(@course) %>
+        <h3 class="badge badge-info">You Are Enrolled!</h3>
+      <% else %>
+      
+      <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-primary', method: :post %>
+      <% end %>
 
-    <% if current_user && current_user == @course.user %>
-      <br />
-      <br />
-      <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-sm' %>
-    <% end %>
+    </div>
+ 
+  
+    <div class="col-sm-8 col-12">
+      <%= @course.description %>
+    </div>
   </div>
-
-  <div class="col-sm-8 col-12">
-    <%= @course.description %>
-  </div>
-</div>
 
  <div class="col-12">
     <% @course.sections.each do |section| %>
