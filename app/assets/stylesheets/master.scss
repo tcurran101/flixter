@@ -3,9 +3,9 @@
 
 .navbar {
     font-family: "Helvetica Neue", Helvetica;
-    font-weight: 200;
+    font-weight: 400;
     box-shadow: 0px 1px 3px #2a2a2a;
-    background: image_url('psychedelic_pattern.png');
+    background: image_url('vintage_flower.jpg');
 }
 
 .navbar-inverse a.navbar-brand {
@@ -15,7 +15,7 @@
 }
 
 .hero {
-  background: image_url('hero.jpg') no-repeat center center fixed;
+  background: image_url('gold_card.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -29,14 +29,14 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .frosty {
-  background: rgba(134, 123, 123, 0.5);
-  color: #F0E458;
+  background: rgba(214, 193, 193, 0.5);
+  color: black;
 }
 
 .frosty h1 {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
-  text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+  text-shadow: rgba(73, 72, 72, 0.95) 1px 1px;
 }
 
 .frosty h2 {
@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 body {
-  background: image_url('bg.png');
+  background: image_url('vintage-concrete.png');
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -89,6 +89,7 @@ html, body {
   font-family: "Helvetica Neue", Helvetica;
   padding: 10px 0px;
   margin-top: 30px;
+  font-weight: 100;
 }
 
 #footer a {
@@ -102,6 +103,10 @@ html, body {
   border-radius: 3px;
   padding: 2px 8px 2px 8px;
   margin: 10px;
+}
+
+.social a:hover {
+  text-decoration: none;
 }
 
 .clr{
