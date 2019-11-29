@@ -12,8 +12,12 @@
       <%= course.description %>
     </div>
 
+      <%= image_tag course.image.to_s, class: 'img-fluid' %>
+
+    <br />
+
     <div class="col-12 col-sm-4 text-center">
-        <%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-primary' %>
+        <%= link_to "Course Details", course_path(course), class: 'btn btn-med btn-primary' %>
     </div>
  
   </div>

@@ -1,18 +1,21 @@
 @import "bootstrap";
 @import "font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 
-.navbar {
-    font-family: "Helvetica Neue", Helvetica;
-    font-weight: 400;
+
+.navbar { 
+  font-family: 'Cinzel', serif;
+    font-weight: 800;
     box-shadow: 0px 1px 3px #2a2a2a;
     background: image_url('vintage_flower.jpg');
+    font-size: large;
 }
 
 .navbar-inverse a.navbar-brand {
-    font-family: "Helvetica Neue", Helvetica;
+  font-family: 'Cinzel', serif;
     font-weight: 100;
     color: white;
-}
+   }
 
 .hero {
   background: image_url('gold_card.jpg') no-repeat center center fixed;
@@ -34,13 +37,13 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .frosty h1 {
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: 'Cinzel', serif;
   font-weight: 100;
   text-shadow: rgba(73, 72, 72, 0.95) 1px 1px;
 }
 
 .frosty h2 {
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: 'Cinzel', serif;
   font-weight: 200;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
@@ -54,11 +57,19 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .btn {
   border-radius: 0;
   margin: 20px;
+  background-color: rgb(68, 65, 49);
+  border-color: grey;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: rgb(94, 29, 29);
+  border-color: grey;
 }
 
 body {
   background: image_url('vintage-concrete.png');
-  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; font-family: 'Cinzel', serif;
 }
 
 html, body {
@@ -69,9 +80,9 @@ html, body {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  background: image_url('booyah.jpg');
+  border: 1px solid rgb(158, 157, 156);
+  border-color: #bdbdb8 #bebebd #bebebd #bdbdb8;
   padding: 10px;
 }
 
@@ -85,15 +96,15 @@ html, body {
   width: 100%;
   min-height: 100px;
   background-color: rgba(36, 32, 33, 0.9);
-  color: white;
-  font-family: "Helvetica Neue", Helvetica;
+  color: grey;
+  font-family: 'Cinzel', serif;
   padding: 10px 0px;
   margin-top: 30px;
   font-weight: 100;
 }
 
 #footer a {
-  color: white;
+  color: grey;
   font-weight: 100;
 }
 
@@ -128,7 +139,7 @@ html, body {
 
 .lesson a {
   color: white;
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: 'Cinzel', serif;
   font-weight: 100;
   font-size: 15px;
 }
@@ -142,7 +153,7 @@ html, body {
   background: black;
   color: white;
   margin: 10px;
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: 'Cinzel', serif;
   font-weight: 100;
   padding: 8px;
   font-size: 15px;
