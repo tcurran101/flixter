@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .btn {
   border-radius: 0;
   margin: 20px;
-  background-color: rgb(68, 65, 49);
+  background-color: rgb(94, 29, 29);
   border-color: grey;
 }
 
@@ -150,7 +150,7 @@ html, body {
 }
 
 .lessons li {
-  background: black;
+  background: rgb(109, 106, 106);
   color: white;
   margin: 10px;
   font-family: 'Cinzel', serif;
@@ -174,14 +174,24 @@ ul {
 
 .section-li {
   border: 1px solid;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  border-color: #9c9b9b #bebebd #bebebd #9c9b9b;
   margin: 20px;
+  background: rgb(56, 52, 52);
 }
 
 ul .header {
   font-size: 25px;
+  background: image_url('vintage_flower.jpg');
 }
 
 ul .header .fa {
   font-size: 20px;
+}
+
+.badge {
+  font-size: medium;
+}
+
+.btn-warning{
+background-color: rgb(55, 28, 173);
 }
