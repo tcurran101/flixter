@@ -1,9 +1,10 @@
 <script>
     $(function() {
       $('.new-lesson-button').click(function( event ) {
-      var lessonUrl = $( event.target).data('lesson-url');
+      var lessonUrl = $(event.target).data('lesson-url');
       $('#newLessonForm').attr('action', lessonUrl);
     });
+
       $('.lessons').sortable({
       update: function( event, ui ) {
         $.ajax({
@@ -40,8 +41,9 @@
     <br class="clr" />
 
     <div class="text-center">
+      <!-- Button trigger modal -->
       <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newSectionModal">
-        New Section...
+       New Section...
       </button>
     </div>
 
@@ -121,6 +123,7 @@
           </button>
           <h4 class="modal-title" id="newLessonModalLabel">Add New Lesson</h4>
         </div>
+
         <%= simple_form_for @lesson, url: "#", html: {id: 'newLessonForm' } do |f| %>
           <div class="modal-body">
             <%= f.input :title %>
@@ -129,7 +132,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <%= f.submit "Add the lesson", class: 'btn btn-primary' %>
+            <%= f.submit "Add Lesson", class: 'btn btn-primary' %>
           </div>
         <% end %>
       </div>
