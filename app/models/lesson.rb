@@ -11,6 +11,5 @@ class Lesson < ApplicationRecord
       return section.next_section.lessons.rank(:row_order).first
     end
     return lesson
-end
-
+  end
 end
